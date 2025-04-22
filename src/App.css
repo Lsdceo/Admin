@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+body.light-mode {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --header-bg: #f8f9fa;
+  --table-header-bg: #e9ecef;
+  --table-border: #dee2e6;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body.dark-mode {
+  --bg-color: #1a1a1a;
+  --text-color: #f8f9fa;
+  --header-bg: #343a40;
+  --table-header-bg: #495057;
+  --table-border: #6c757d;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.light-mode .adminContainer {
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
-.App-link {
-  color: #61dafb;
+.dark-mode .adminContainer {
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dark-mode .table th {
+  background-color: var(--table-header-bg);
+}
+
+.dark-mode .table th, 
+.dark-mode .table td {
+  border-bottom: 1px solid var(--table-border);
 }

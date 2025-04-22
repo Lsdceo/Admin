@@ -1,0 +1,56 @@
+.container {
+    margin: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .header {
+    margin-bottom: 15px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  
+  .table th {
+    text-align: left;
+    padding: 12px 15px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    font-weight: 600;
+    color: #495057;
+  }
+  
+  .table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #dee2e6;
+    color: #212529;
+  }
+  
+  .statusActive {
+    color: #28a745; /* Verde para Ativo */
+    font-weight: 500;
+  }
+  
+  .statusInactive {
+    color: #dc3545; /* Vermelho para Inativo */
+    font-weight: 500;
+  }
+  
+
+  .dark-mode .table th {
+    background-color: #343a40;
+    color: #f8f9fa;
+    border-color: #454d55;
+  }
+  
+  .dark-mode .table td {
+    color: #f8f9fa;
+    border-color: #454d55;
+  }
+  
+  .dark-mode .container {
+    background-color: #212529;
+    color: #f8f9fa;
+  }
